@@ -1,0 +1,3 @@
+Shortest path problem and traveling salesman problem are similar because both aims to find the shortest path in a graph, but they differ in the number destinations from the starting point.
+Shortest path aim to find the shortest path between an origin point and a destination.
+Traveling salesman aim to find the shortest path between an origin point and a list of destinations that must all be visited.

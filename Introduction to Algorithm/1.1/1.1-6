@@ -1,0 +1,2 @@
+Cooking is a real world example of a problem in which (hopefully) the entire input (ingredients) is available before solving the problem (cooking a dish).
+Video streaming on the other hand requires processing input data as they come a bit at the time.

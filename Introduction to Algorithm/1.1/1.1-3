@@ -1,0 +1,8 @@
+Arrays are a very common data structure that can contain multiple elements of the same type.
+
+Pros: 
+- Random access through indexes
+
+Cons:
+- Fixed size (lenght)
+- Can't contain elements of different types (you can't have an array containing both Strings and Ints for example)
