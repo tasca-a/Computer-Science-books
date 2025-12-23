@@ -1,0 +1,2 @@
+An application that requires algorithms directly at application level is 7-Zip.
+It uses a wide range of compression algorithms that are used both in real time to browse archives and on-demand when the user wants to compress/extract a file.

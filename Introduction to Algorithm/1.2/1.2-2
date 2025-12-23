@@ -1,0 +1,3 @@
+n <= 44
+
+This is an approximation based on the fact that n is an integer (it represents computational stepsm, which are discrete).
