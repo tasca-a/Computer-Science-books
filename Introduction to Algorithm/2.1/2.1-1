@@ -1,0 +1,35 @@
+Original array:
+31 41 59 26 41 58
+
+k = key -> black square in picture 2.2
+c = compared with (in a step of the algorithm)
+
+Step 1:
+c  k
+31 41 59 26 41 58
+= Already in order, no operations performed
+
+Step 2:
+c  c  k
+31 41 59 26 41 58
+= Already in order, no operations performed
+
+Step 3:
+c  c  c  k
+31 41 59 26 41 58
+= k < 31, so k is moved to position 1
+
+Step 4:
+      c  c  k
+26 31 41 59 41 58
+= k < 59, so k is moved to position 4.
+  The algorithm makes a comparison with position 3 but then does nothing.
+
+Step 5:
+         c  c  k
+26 31 41 41 59 58
+= k < 59, so k is moved to position 5.
+  The algorithm makes a comparison with position 4 but then does nothing.
+
+Output:
+26 31 41 41 58 59
