@@ -1,0 +1,19 @@
+Invariante di ciclo:
+    All'inizio di ogni iterazione del ciclo for (righe 2-3) la variabile 'sum' contiene la somma degli elementi del sottoarray A[1, i-1].
+
+Inizializzazione:
+    Prima della prima iterazione, ovvero con i = 1, abbiamo che 'sum' = 0.
+    Il sottoarray A[1, i-1] (in questo caso A[1,0]) è un array vuoto.
+    La somma degli elementi di un array vuoto è 0 per definizione.
+
+Mantenimento:
+    Il corpo del ciclo for aggiunge a 'sum' il valore di A[i] prima di passare all'iterazione successiva.
+    Questo vuol dire che all'inizio dell'iterazione successiva (i+1) 'sum' conterrà la sommatoria degli elementi di A dall'indice 1 all'indice i, che
+    corrisponde all'invariante di ciclo.
+
+Conclusione:
+    Non appena il valore di i eccede n nella linea 2, il ciclo termina.
+    Quindi il ciclo ternima quando i = n+1.
+    Utilizzando l'invariante di ciclo, abbiamo che la variabile 'sum' contiene la somma degli elementi del sottoarray A[1,(n+1)-1] = A[1, n], che 
+    corrisponde all'array originale completo.
+    Pertanto l'algoritmo è corretto.
