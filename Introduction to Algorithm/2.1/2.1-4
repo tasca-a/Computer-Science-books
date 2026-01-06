@@ -1,0 +1,21 @@
+Linear-Search(A, n, x)
+    index = nil
+    for i = 1 to n
+        if (A[i] == x)
+            index = i
+    return index
+
+Invariante di ciclo:
+    All'inizio di ogni iterazione la varibile "index" contiene l'indice per cui A[index] = x oppure nil.
+
+Inizializzazione:
+    Prima della prima iterazione, con i = 1, abbiamo che index = nil, per cui l'invariante di ciclo è soddisfatta.
+
+Mantenimento:
+    Il corpo del ciclo for assegna ad "index" il valore di i se A[i] corrisponde al valore di x.
+    L'invariante di coclo è perciò sempre soddisfatta per ogni iterazione.
+
+Conclusione:
+    Nonappena il valore di i supera n, il ciclo termina in quanto tutti gli elementi dell'array A sono stati ispezionati.
+    Visto che durante l'inizializzazione "index" contiene il valore nil e che questo valore può essere sovrascritto soltanto durante la fase di mantenimento, dove l'inviariante di ciclo è sempre mantenuta, è logico dedurre che all'esaurimento degli elementi dell'array (i > n) "index" contenga esattamente l'output desiderato.
+    L'algoritmo è pertanto corretto.
