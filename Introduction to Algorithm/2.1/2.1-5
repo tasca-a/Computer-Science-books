@@ -1,0 +1,16 @@
+Add-Binary-Integers(A, B, n) {
+    C = array[n + 1]
+    carry = 0
+    for i = n down to 0 {
+        bitsum = A[i] + B[i] + carry
+        if (bitsum > 1) {
+            carry = 1
+            bitsum = bitsum - 2
+        } else {
+            carry = 0
+        }
+        C[i + 1] = bitsum
+    }
+    C[0] = carry
+    return C
+}
